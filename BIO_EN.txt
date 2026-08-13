@@ -1,0 +1,32 @@
+Project Name: rasaOS
+
+Overview:
+rasaOS is an open-source project aimed at providing a lightweight framework and tooling for building, developing, and deploying conversational systems (chatbots) and virtual assistants. The project bundles tools, modules, and ready-to-use examples to streamline the process of designing and implementing conversational models based on Rasa or similar architectures.
+
+Main Goals:
+- Provide structure and templates for rapid chatbot development.
+- Simplify integration with external services and APIs.
+- Offer local development and testing environments with deployment-ready configurations for servers or cloud.
+- Supply documentation and example code for quick onboarding.
+
+Key Features:
+- Ready-made modules for NLU, dialogue management, and response generation.
+- Deployment examples and configurations (Docker, Docker Compose, Kubernetes).
+- Example datasets and training pipelines for models.
+- REST/HTTP APIs to connect with external systems and services.
+
+Quick Start (summary):
+1. Clone the repository:
+   git clone https://github.com/Rasajji/rasaOS.git
+2. Install dependencies and run (example using Docker):
+   docker-compose up --build
+3. See docs/ or README.md for detailed configuration and usage.
+
+Contributing:
+Contributions are welcome — bug reports, feature requests, and pull requests adding improvements or new modules are all appreciated. Please read CONTRIBUTING.md before submitting a PR.
+
+License:
+License information is available in the LICENSE file. Choose an appropriate open-source license as needed.
+
+Contact:
+Use the repository Issues for questions or collaboration, or contact the maintainers via the contact info in the README or their GitHub profile.
