@@ -1,0 +1,10 @@
+# /etc/logrotate.d/rasa
+/var/log/rasa*.log {
+    daily
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    notifempty
+    copytruncate
+}

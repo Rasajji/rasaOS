@@ -1,0 +1,9 @@
+# /etc/fstab
+# <file system> <mount point>   <type>  <options>         <dump>  <pass>
+proc /proc      proc    defaults         0       0
+sysfs /sys      sysfs   defaults         0       0
+tmpfs /dev/shm  tmpfs   defaults         0       0
+# root disk
+/dev/sda1 /     ext4    errors=remount-ro 0       1
+# rasa virtual disk
+/dev/sdb1 /rasa  ext4   defaults         0       2

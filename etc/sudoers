@@ -1,0 +1,7 @@
+# /etc/sudoers — read with `sudo visudo`
+# rules (root, %sudo, %admin) are commented/placeholder; uncomment when needed
+Defaults env_reset
+Defaults mail_badpass
+root ALL=(ALL:ALL) ALL
+# %sudo ALL=(ALL:ALL) ALL
+# %admin ALL=(ALL:ALL) ALL

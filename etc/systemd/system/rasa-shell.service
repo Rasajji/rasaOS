@@ -1,0 +1,14 @@
+# /etc/systemd/system/rasa-shell.service
+[Unit]
+Description=Rasa OS login shell
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/rasa os
+Restart=always
+User=rasa
+StandardInput=tty
+TTYPath=/dev/console
+
+[Install]
+WantedBy=getty.target

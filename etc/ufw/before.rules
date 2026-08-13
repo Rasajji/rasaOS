@@ -1,0 +1,9 @@
+# /etc/ufw/before.rules — ufw default chain rules
+*nat
+:POSTROUTING ACCEPT [0:0]
+COMMIT
+*filter
+:ufw-before-input - [0:0]
+:ufw-before-output - [0:0]
+:ufw-before-forward - [0:0]
+COMMIT

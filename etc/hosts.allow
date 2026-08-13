@@ -1,0 +1,3 @@
+# /etc/hosts.allow — TCP wrapper allow list
+sshd: 192.168.1.0/24
+ALL: 127.0.0.1

@@ -1,0 +1,10 @@
+# /etc/os-release — Rasa OS
+NAME="Rasa OS"
+VERSION="0.1.1"
+ID=rasa
+ID_LIKE=linux
+PRETTY_NAME="Rasa OS Server"
+VERSION_ID="0.1.1"
+HOME_URL="https://example.org/rasa"
+SUPPORT_URL="https://example.org/support"
+BUG_REPORT_URL="https://example.org/bugs"

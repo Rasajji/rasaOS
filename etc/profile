@@ -1,0 +1,20 @@
+# /etc/profile — system-wide login shell behavior
+if [ "$BASH" ]; then
+  if [ -f /etc/bash.bashrc ]; then
+    . /etc/bash.bashrc
+  fi
+fi
+
+if [ "$(id -u)" -eq 0 ]; then
+  PS1='#[${PWD}]${USER}# '
+else
+  PS1='#[${PWD}]${USER}$ '
+fi
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+for i in /etc/profile.d/*.sh; do
+  if [ -r "$i" ]; then
+    . "$i"
+  fi
+done

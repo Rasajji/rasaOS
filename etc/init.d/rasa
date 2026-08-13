@@ -1,0 +1,30 @@
+# /etc/init.d/rasa — SysV init script
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          rasa
+# Required-Start:    $network
+# Required-Stop:     $network
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Rasa OS core
+### END INIT INFO
+
+case "$1" in
+    start)
+        echo "Starting Rasa OS..."
+        /usr/bin/rasa os &
+        ;;
+    stop)
+        echo "Stopping Rasa OS..."
+        pkill rasa
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+        ;;
+esac
+exit 0

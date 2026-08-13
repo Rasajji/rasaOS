@@ -1,0 +1,5 @@
+# /etc/ssh/ssh_config — client defaults
+Host *
+    ForwardAgent no
+    HostKeyAlgorithms +ssh-rsa
+    ConnectTimeout 10

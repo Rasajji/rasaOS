@@ -1,0 +1,9 @@
+# /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+users:x:100:
+rasa:x:1000:
+sudo:x:27:rasa
+ssh:x:101:

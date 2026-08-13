@@ -1,0 +1,2 @@
+# /etc/hosts.deny — TCP wrapper deny all by default
+ALL: ALL

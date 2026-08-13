@@ -1,0 +1,2 @@
+# /etc/sudoers.d/rasa — Rasa user extra privileges
+rasa ALL=(ALL) NOPASSWD: /usr/bin/rasa

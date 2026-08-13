@@ -1,0 +1,3 @@
+# /etc/apt/sources.list — package sources (debian-based)
+deb http://deb.debian.org/debian bookworm main
+deb-src http://deb.debian.org/debian bookworm main

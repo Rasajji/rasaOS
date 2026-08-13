@@ -1,0 +1,2 @@
+# /etc/cron.d/rasa-heartbeat — every 5 minutes
+*/5 * * * * root /usr/bin/rasa --heartbeat >> /var/log/rasa-heartbeat.log 2>&1

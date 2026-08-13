@@ -1,0 +1,21 @@
+# /etc/ssh/sshd_config — Rasa SSH server
+Port 22
+ListenAddress 0.0.0.0
+ListenAddress ::
+
+PermitRootLogin prohibit-password
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+ChallengeResponseAuthentication no
+PubkeyAuthentication yes
+AuthorizedKeysFile .ssh/authorized_keys
+
+X11Forwarding no
+AllowAgentForwarding no
+LogLevel VERBOSE
+MaxAuthTries 3
+LoginGraceTime 30
+
+Subsystem sftp internal-sftp
+AllowTcpForwarding no
+UsePAM yes
