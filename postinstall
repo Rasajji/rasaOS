@@ -1,0 +1,19 @@
+#!/bin/sh
+# postinstall for Rasa OS .pkg
+set -e
+
+PREFIX=/usr/local
+BIN="$PREFIX/bin/rasa"
+
+if [ -x "$BIN" ]; then
+  chmod 755 "$BIN"
+fi
+
+# Make sure the CLI is reachable from a fresh login shell.
+if [ -d /etc/paths.d ]; then
+  if ! grep -qx "$PREFIX/bin" /etc/paths.d/rasa 2>/dev/null; then
+    echo "$PREFIX/bin" > /etc/paths.d/rasa
+  fi
+fi
+
+exit 0
